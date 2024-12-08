@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Wonderland</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Christmas Wonderland!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">decorations</a></li>
+            <li><a href="#">Wheel</a></li>
+        </ul>
+    </nav>
+  
+    
+    <form id="survey"  action="http://www.example.com/Wonderland/survey" method="post"> 
+        <fieldset id="custInfo"> 
+
+           <legend>Customer Information</legend>
+           <div class="formRow"> 
+           <label for="name">Name*</label> 
+           <input type="text" id="name"  placeholder="first and last name" required>
+        </div>
+        <div class="formRow"> 
+           <label for="street">Street address</label>  
+           <input name="custStreet" id="street" type="text" > 
+        </div>
+
+            <div class="formRow"> 
+          <label for="city">City</label>  
+           <input name="custCity" id="city" type="text"   > 
+        </div>
+        
+        
+        <div class="formRow"> 
+           <label for="state">state</label>
+           <input name="custState" id="state" type="text"  > 
+        </div>
+
+        <div class="formRow">
+         <label for="postal_code">Postal code</label>
+           <input name="custZip" id="postal_code" type="text" placeholder="xxxxx (-xxxx)"
+           pattern="^\d{5}(-\d{4})?$"> 
+        </div>
+
+        <div class="formRow">
+         <label for="phone_number">Phone number</label>
+           <input name="custPhone" id="phone_number" type="tel" placeholder="xxxxx (-xxxx)"
+           pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+        </div> 
+           
+           <div class="formRow">
+           <label for="E-mail">E-mail</label>
+           <input name="custEmail" id="E-mail" type="email" required>
+        </div>
+
+           <input name="mailMe" id="mailCB" value="yes" type="checkbox"> 
+           <label for="mailCB">Add me for great 
+           coupons and specials!</label>
+
+
+        </fieldset> 
+
+        <fieldset id="expInfo">
+           <legend>Share Your Experience at Christmas Wonderland</legend> 
+           <div class="formRow"> 
+              <label for="visit">Date of visit</label> 
+              <input name="visitDate" id="visit"> 
+           </div>
+
+           <div class="formRow"> 
+              <label for="order">Order arrival</label> 
+              <input type="date" id="order">
+           </div>
+
+           <div class="formRow"> 
+              <label>Was your service friendly?</label> 
+              <fieldset class="optGroup"> 
+                 <label for="fYes">Yes</label> 
+                 <input name="sFriend" id="fYes" value="yes" 
+           type="radio"> 
+                 <label for="fNo">No</label> 
+                 <input name="sFriend" id="fNo" value="no" 
+           type="radio"> 
+              </fieldset> 
+           </div>
+
+           <div class="formRow"> 
+              <label for="rangeBox">Rate the overall service<br> 
+                     (0=poor; 10=great)</label> 
+              0 
+              <input name="serviceRate" id="rangeBox" type="range" 
+                     value="5" step="1" min="0" max="10"> 
+              10 
+           </div>
+
+
+           <label for="commBox">Tell us more about your  
+              experience!</label> 
+           <textarea name="custExp" id="commBox"></textarea>
+
+        </fieldset>
+
+
+        <div id="buttons"> 
+           <input type="submit" value="Submit My Survey"> 
+           <input type="reset" value="Cancel"> 
+        </div>
+
+     </form>
+    <footer>
+        <p>&copy; 2025 Christmas Wonderland</p>
+    </footer>
+</body>
+</html>
